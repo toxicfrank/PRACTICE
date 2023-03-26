@@ -1,27 +1,26 @@
 #include <stdio.h>
 /**
- * main - this is a programme that will display the salary of an
- * employer when inserted
+ * main - this is a programme that will display the age of an
+ * employer when inserted and multiply it by 2
  *
  * Return: always 0
  */
 int main(void)
 {
-	double salary;
+	int age;
 
-	printf("Enter your salary: \n");
+	printf("What is ur age: \n");
 
-	scanf("%lf", &salary);
+	scanf("%d", &age);
 
-	double *ptr = &salary;
+	int *ptr = &age;
 
-	printf("Your salary is: %.2lf\n", *ptr);
+	printf("Your age is: %d\n", *ptr);
 
-	double new_salary = *ptr * 2;
+	int new_age = *ptr * 2;
 
-	printf("Your double salary is: %.2lf\n", new_salary);
+	printf("New age is: %d\n", new_age);
 
 	return (0);
-
 
 }
