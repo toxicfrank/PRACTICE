@@ -17,6 +17,8 @@ int main(void)
 
 	printf("Your age is: %d\n", *ptr);
 
+	printf("Address: %p\n", ptr);
+
 	int new_age = *ptr * 2;
 
 	printf("New age is: %d\n", new_age);
