@@ -12,27 +12,33 @@ int main(void)
 	int seen[10] = {0};
 	int N;
 
-	printf("Enter the number: ");
+	printf("Enter a number so that it can be checked whether the digit is repeated: ");
 	scanf("%d", &N);
 
-	/*Part 2*/
+	/*part 2*/
 	int rem;
 
 	while (N > 0)
 	{
 		rem = N % 10;
+
 		if (seen[rem] == 1)
-		break;
-		seen[rem] = 1;
-		N = N / 10;
+		{
+			break;
+		}
+		else
+		{
+			seen[rem] = 1;
+			N = N / 10;
+		}
 	}
 	if (N > 0)
 	{
-		printf("Yes");
+		printf("yes there is repetition of digits");
 	}
 	else
 	{
-		printf("No");
+		printf("There is no repetition of digits");
 	}
 	return (0);
 }
