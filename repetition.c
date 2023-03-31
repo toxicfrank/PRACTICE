@@ -32,6 +32,7 @@ int main(void)
 			N = N / 10;
 		}
 	}
+	/*part 3*/
 	if (N > 0)
 	{
 		printf("yes there is repetition of digits");
