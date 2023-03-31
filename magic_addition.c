@@ -23,6 +23,7 @@ int main(void)
 	printf("\n");
 	/*Row sum*/
 
+	printf("Row total: \n");
 	for (i = 0; i < 5; i++)
 	{
 		for (j = 0; j < 5; j++)
@@ -35,6 +36,7 @@ int main(void)
 
 	/*Column sum*/
 
+	printf("Column total: \n");
 	for (j = 0; j < 5; j++)
 	{
 		for (i = 0; i < 5; i++)
